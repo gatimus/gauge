@@ -1,0 +1,96 @@
+@font-face {
+  font-family: GetDigital;
+  src: url(get_digital.ttf);
+}
+
+@font-face {
+  font-family: PixelLCD7;
+  src: url(pixel_lcd-7.ttf);
+}
+
+
+#gauge-container {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, #999 0%, #333 50%, #000 100%);
+  border-radius: 250px;
+  border:1px solid black;
+}
+
+#gauge {
+  width: 100%;
+  height: 100%;
+}
+
+#needle {
+  transform-origin: 250px 250px;
+  transform: rotate(-135deg);
+}
+
+line {
+  transform-origin: 250px 250px;
+}
+
+line:nth-of-type(1) {
+  transform: rotate(-135deg);
+}
+
+line:nth-of-type(2) {
+  transform: rotate(-109deg);
+}
+
+line:nth-of-type(3) {
+  transform: rotate(-82deg);
+}
+
+line:nth-of-type(4) {
+  transform: rotate(-54deg);
+}
+
+line:nth-of-type(5) {
+  transform: rotate(-27deg);
+}
+
+line:nth-of-type(6) {
+  
+}
+
+line:nth-of-type(7) {
+  transform: rotate(27deg);
+}
+
+line:nth-of-type(8) {
+  transform: rotate(54deg);
+}
+
+line:nth-of-type(9) {
+  transform: rotate(82deg);
+}
+
+line:nth-of-type(10) {
+  transform: rotate(109deg);
+}
+
+line:nth-of-type(11) {
+  transform: rotate(135deg);
+}
+
+#LCD {
+  font-family: PixelLCD7;
+  font-size: 45px;
+  text-align: right;
+  width: 200px;
+  height: 50px;
+  background: #65654d;
+  border-radius: 5px;
+  box-shadow: inset 5px 5px 5px #000000;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
